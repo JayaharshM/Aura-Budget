@@ -1,0 +1,351 @@
+================================================================================
+                     AURA BUDGET — SYSTEM ARCHITECTURE
+================================================================================
+
+PROJECT OVERVIEW
+----------------
+Aura Budget is an AI-powered personal finance management web application that
+combines transaction tracking, budget planning, investment tracking, goal
+management, and collaborative shared budgets — all enhanced by LLM-powered
+insights and ML-based spending forecasts.
+
+================================================================================
+HIGH-LEVEL ARCHITECTURE
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          CLIENT (Browser)                                   │
+│                                                                             │
+│   React 18 + Vite SPA  ─── Axios HTTP ───►  REST API  (Express.js)         │
+│       (port 5173)       ◄── JSON ──────────  (port 5001)                   │
+│                                                                             │
+│   Socket.IO Client  ◄──────────────────────  Socket.IO Server              │
+│   (real-time events)                         (same Express server)          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+DIRECTORY STRUCTURE
+================================================================================
+
+SRP Project/
+├── frontend/                  ← React/Vite single-page application
+│   ├── src/
+│   │   ├── App.jsx            ← Main application (all screens & logic)
+│   │   ├── App.css            ← Global styles
+│   │   ├── main.jsx           ← React entry point
+│   │   ├── index.css          ← Base CSS & design tokens
+│   │   ├── components/
+│   │   │   └── Auth.jsx       ← Login / Register component
+│   │   └── assets/            ← Static assets
+│   ├── index.html
+│   ├── vite.config.js
+│   └── package.json
+│
+└── backend/                   ← Node.js / Express REST API
+    ├── server.js              ← Main server (models + routes, ~1,425 lines)
+    ├── forecast.py            ← Python ML forecasting script
+    ├── seed_mock_data.js      ← Database seeding script
+    ├── list-models.js         ← Utility: list available AI models
+    ├── test-ai.js             ← Test script for AI endpoints
+    ├── .env                   ← Environment variables (secrets)
+    ├── uploads/               ← Multer file upload storage (audio files)
+    ├── ml/
+    │   ├── train_rf.py        ← Random Forest model training script
+    │   └── requirements.txt   ← Python dependencies
+    ├── model/                 ← Trained ML model files (pkl)
+    │   ├── expense_category_rf.pkl       ← Expense category classifier
+    │   ├── expense_amount_rf.pkl         ← Expense amount predictor
+    │   ├── spending_forecaster.pkl       ← Spending forecast model
+    │   └── expense_category_classes.json ← Category label map
+    └── package.json
+
+================================================================================
+FRONTEND LAYER
+================================================================================
+
+Technology Stack:
+  • React 18          — UI framework
+  • Vite              — Dev server & bundler
+  • Axios             — HTTP client for API calls
+  • Socket.IO Client  — Real-time events (room updates, join requests)
+  • Recharts          — Charts (Pie, Bar, Area, Line)
+  • Framer Motion     — Animations & transitions
+  • Lucide React      — Icon library
+  • React Markdown    — Renders AI markdown responses
+  • jsPDF             — PDF export for transaction reports
+  • React Router DOM  — Client-side routing
+
+Application Screens (tabs in App.jsx):
+  ┌──────────────────────────────────────────────────────────┐
+  │  Overview       — Dashboard summary (income vs expenses) │
+  │  Transactions   — Full transaction history + add/delete  │
+  │  Budgets        — Category budget limits + AI Builder    │
+  │  Subscriptions  — Recurring subscriptions tracker        │
+  │  Goals          — Savings goals with AI insights         │
+  │  Investments    — Portfolio tracker (stocks/crypto)      │
+  │  Collaboration  — Shared Budget Rooms (multi-user)       │
+  │  Diary          — "Describe Your Day" AI parser          │
+  │  Forecast       — ML-powered spending forecast charts    │
+  │  Settings       — Theme, currency, onboarding, reset     │
+  └──────────────────────────────────────────────────────────┘
+
+State Management:
+  • All state managed via React useState hooks (no Redux)
+  • JWT stored in localStorage; passed as Bearer token on every API request
+  • Socket.IO handles push updates for collaboration rooms
+
+================================================================================
+BACKEND LAYER
+================================================================================
+
+Technology Stack:
+  • Node.js + Express 5  — HTTP server & REST API
+  • Mongoose 9           — MongoDB ODM
+  • Socket.IO 4          — WebSocket server (real-time collaboration)
+  • bcryptjs             — Password hashing
+  • jsonwebtoken (JWT)   — Stateless auth tokens
+  • Multer               — Audio file upload (for voice diary)
+  • dotenv               — Environment variable management
+  • Groq SDK             — LLaMA 3.3 70B via Groq LPU (AI insights/budget)
+  • @google/generative-ai — Gemini API integration
+  • OpenAI SDK           — Whisper transcription (voice diary feature)
+
+Database: MongoDB Atlas
+  Collections / Mongoose Models:
+    ┌────────────────┬────────────────────────────────────────────────────┐
+    │ Model          │ Key Fields                                         │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ User           │ name, email, password, onboarding (preferences,   │
+    │                │ income, goals), completed flag                     │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ Transaction    │ userId, title, amount, type, category, date,       │
+    │                │ collaborationId (optional room ref)                │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ Budget         │ userId, roomId (optional), category, limit         │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ BudgetRoom     │ name, code, admin, members, pendingRequests,       │
+    │                │ comments, settlements                              │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ Subscription   │ userId, name, amount, frequency, nextBillingDate,  │
+    │                │ category                                           │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ Goal           │ userId, title, targetAmount, currentAmount,        │
+    │                │ category, deadline, contributions[]                │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ Investment     │ userId, assetName, symbol, shares, buyPrice,       │
+    │                │ assetType, currentPrice                            │
+    ├────────────────┼────────────────────────────────────────────────────┤
+    │ JournalEntry   │ userId, text, date                                 │
+    └────────────────┴────────────────────────────────────────────────────┘
+
+================================================================================
+REST API ENDPOINTS
+================================================================================
+
+  Auth & User
+  ─────────────────────────────────────────────────────────────
+  POST   /api/auth/register          Register a new user
+  POST   /api/auth/login             Login, returns JWT
+  POST   /api/user/onboarding        Save onboarding responses
+  POST   /api/user/reset             Reset account data (requires password)
+
+  Transactions
+  ─────────────────────────────────────────────────────────────
+  GET    /api/transactions           Get all transactions for user
+  POST   /api/transactions           Create new transaction
+  DELETE /api/transactions/:id       Delete a transaction
+
+  Budgets
+  ─────────────────────────────────────────────────────────────
+  GET    /api/budgets                Get personal budgets
+  POST   /api/budgets                Create or update budget for category
+  DELETE /api/budgets/:id            Delete a budget
+
+  Subscriptions
+  ─────────────────────────────────────────────────────────────
+  GET    /api/subscriptions          Get all subscriptions
+  POST   /api/subscriptions          Add new subscription
+  DELETE /api/subscriptions/:id      Remove subscription
+
+  Goals
+  ─────────────────────────────────────────────────────────────
+  GET    /api/goals                  Get all goals
+  POST   /api/goals                  Create new goal
+  PUT    /api/goals/:id              Update goal (contribute amount)
+  DELETE /api/goals/:id              Delete a goal
+
+  Investments
+  ─────────────────────────────────────────────────────────────
+  GET    /api/investments            Get portfolio
+  POST   /api/investments            Add investment asset
+  PUT    /api/investments/:id        Update asset (price/shares)
+  DELETE /api/investments/:id        Remove asset
+
+  Stock Data (Alpha Vantage Integration)
+  ─────────────────────────────────────────────────────────────
+  GET    /api/stocks/search          Search for stock symbols
+  GET    /api/stocks/price/:symbol   Get current price for a symbol
+
+  Collaboration Rooms
+  ─────────────────────────────────────────────────────────────
+  GET    /api/rooms                  Get all rooms for user
+  POST   /api/rooms                  Create a new budget room
+  POST   /api/rooms/join             Request to join room by code
+  POST   /api/rooms/:id/request/:rid Accept or reject join request
+  POST   /api/rooms/:id/settle       Record a settlement between members
+  DELETE /api/rooms/:id              Delete a room (admin only)
+  GET    /api/rooms/:id/transactions Room transactions
+  POST   /api/rooms/:id/budgets      Set room-level budget
+  POST   /api/rooms/:id/comments     Post comment to room
+  DELETE /api/rooms/:id/members/:uid Remove a member from room
+
+  Diary / Journal
+  ─────────────────────────────────────────────────────────────
+  GET    /api/diary                  Get journal entries
+  POST   /api/diary                  Save a new journal entry
+  DELETE /api/diary/:id              Delete a journal entry
+
+  AI Features (LLM)
+  ─────────────────────────────────────────────────────────────
+  POST   /api/insights               AI financial insights (Groq/LLaMA 3.3)
+  POST   /api/ai/suggest-budget      AI budget generation from description
+  POST   /api/ai/parse-day           Parse diary text → transactions/subs/goals
+  POST   /api/ai/stock-suggestions   AI investment ideas (Groq/LLaMA 3.3)
+  POST   /api/ai/transcribe          Voice-to-text transcription (Whisper via OpenAI)
+
+  ML Forecasting
+  ─────────────────────────────────────────────────────────────
+  POST   /api/forecast               Invoke Python ML model → spending forecast
+
+================================================================================
+AI & MACHINE LEARNING LAYER
+================================================================================
+
+  LLM APIs Used:
+    • Groq (LLaMA 3.3 70B Versatile)
+        - /api/insights        — Personalized financial insights
+        - /api/ai/suggest-budget — AI-generated budget plans
+        - /api/ai/parse-day    — Natural language → structured transactions
+        - /api/ai/stock-suggestions — Investment recommendations
+
+    • Google Gemini API (@google/generative-ai)
+        - Secondary LLM, configured and available in server.js
+
+    • OpenAI Whisper (via OpenAI SDK)
+        - /api/ai/transcribe  — Voice recording → text transcription
+
+  ML Models (Python / scikit-learn — in /backend/model/):
+    • expense_category_rf.pkl      — Classifies expense category from text
+    • expense_amount_rf.pkl        — Predicts expected expense amount
+    • spending_forecaster.pkl      — Time-series spending forecast
+    • Training script: /backend/ml/train_rf.py (uses Kaggle personal finance data)
+    • Inference script: /backend/forecast.py (called by Express via child process)
+
+  External Data APIs:
+    • Alpha Vantage API — Stock symbol search & real-time price lookup
+    • Open Exchange Rates — Currency conversion for multi-currency support
+
+================================================================================
+REAL-TIME LAYER (Socket.IO)
+================================================================================
+
+  Events emitted by server → client:
+    • room_update        — Room state changed (member joined, transaction added)
+    • new_comment        — New comment posted in a room
+    • new_transaction    — New transaction added to a room
+    • new_join_request   — Someone requested to join a room
+    • room_deleted       — Room was deleted by admin
+    • request_processed  — Join request accepted or rejected
+
+  Events emitted by client → server:
+    • join_user_room     — Subscribe to user's personal notification channel
+    • join_room          — Subscribe to a specific budget room's events
+    • leave_room         — Unsubscribe from a room
+
+================================================================================
+AUTHENTICATION & SECURITY
+================================================================================
+
+  • Algorithm    : JWT (jsonwebtoken), signed with JWT_SECRET from .env
+  • Password     : bcryptjs (salt rounds = 8)
+  • Auth Flow    : Register → hashed password stored → login → JWT issued
+                  → All protected routes use `auth` middleware to verify token
+  • Token Storage: localStorage in browser (sent as Authorization: Bearer <token>)
+
+================================================================================
+ENVIRONMENT VARIABLES (.env)
+================================================================================
+
+  MONGODB_URI          — MongoDB Atlas connection string
+  JWT_SECRET           — Secret for signing JWTs
+  GROQ_API_KEY         — Groq LPU API key (LLaMA 3.3 70B)
+  GEMINI_API_KEY       — Google Gemini API key
+  OPENAI_API_KEY       — OpenAI Whisper API key
+  ALPHA_VANTAGE_API_KEY — Stock data API key
+  EXCHANGE_RATE_API_KEY — Currency exchange rate API key
+
+================================================================================
+DATA FLOW EXAMPLES
+================================================================================
+
+  1. User logs in:
+     Browser → POST /api/auth/login → Express validates password (bcrypt)
+             → issues JWT → stored in localStorage → all future requests
+               attach token as Bearer header
+
+  2. Describe Your Day (AI Diary):
+     User speaks → MediaRecorder → audio blob → POST /api/ai/transcribe
+     (Whisper) → text returned → POST /api/ai/parse-day (Groq/LLaMA) →
+     JSON: { transactions[], subscriptions[], goals[] } → each item
+     posted to respective API endpoint → UI refreshes
+
+  3. AI Budget Builder:
+     User types financial goal description → POST /api/ai/suggest-budget
+     → Groq fetches user's real spending, income, subscriptions →
+     LLaMA generates budget JSON → displayed in UI → user applies it
+     → POST /api/budgets for each category
+
+  4. Spending Forecast:
+     POST /api/forecast → Express spawns child_process running forecast.py
+     → Python loads spending_forecaster.pkl → predicts next N days →
+     returns JSON → rendered as AreaChart in frontend
+
+  5. Collaboration Room (real-time):
+     User A adds transaction to Room → POST /api/transactions with
+     collaborationId → server saves + emits 'new_transaction' via Socket.IO
+     → User B (in same room) receives event → fetchRoomData() called →
+     UI updates instantly without refresh
+
+================================================================================
+TECHNOLOGY SUMMARY TABLE
+================================================================================
+
+  Layer             Technology                      Version
+  ─────────────────────────────────────────────────────────
+  Frontend UI       React                           18.3.1
+  Build Tool        Vite                            5.4.10
+  HTTP Client       Axios                           1.13.5
+  Routing           React Router DOM                7.13.0
+  Charts            Recharts                        3.7.0
+  Animation         Framer Motion                   12.34.3
+  Icons             Lucide React                    0.575.0
+  PDF Export        jsPDF + jspdf-autotable         4.2.0
+  Real-time (FE)    Socket.IO Client                4.8.3
+  ─────────────────────────────────────────────────────────
+  Backend Runtime   Node.js (CommonJS)              —
+  HTTP Framework    Express                         5.2.1
+  Database ODM      Mongoose                        9.2.1
+  Auth              jsonwebtoken + bcryptjs          9.0.3
+  Real-time (BE)    Socket.IO                       4.8.3
+  File Uploads      Multer                          2.0.2
+  LLM (Primary)     Groq SDK (LLaMA 3.3 70B)        0.37.0
+  LLM (Secondary)   Google Generative AI            0.24.1
+  Voice STT         OpenAI Whisper (openai SDK)     6.22.0
+  Database          MongoDB Atlas                   Cloud
+  ─────────────────────────────────────────────────────────
+  ML Training       Python / scikit-learn (RF)      —
+  ML Inference      Python (called via child_process)—
+  Stock Data        Alpha Vantage REST API           —
+  FX Rates          Open Exchange Rates API          —
+
+================================================================================

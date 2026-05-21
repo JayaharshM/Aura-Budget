@@ -1,0 +1,220 @@
+[25/03/26, 1:07:52 PM] Haroon Ziyadd: // 1. Elliptic Curve Arithmetic
+// Curve: y^2 = x^3 + 2x + 3 (mod 97)
+ 
+public class ECArithmetic {
+ 
+    static long p = 97;  // prime modulus
+    static long a = 2;   // curve parameter
+ 
+    // Modular inverse using Fermat's little theorem: x^(p-2) mod p
+    static long modInverse(long x) {
+        return modPow(x, p - 2, p);
+    }
+ 
+    static long modPow(long base, long exp, long mod) {
+        long result = 1;
+        base = base % mod;
+        while (exp > 0) {
+            if (exp % 2 == 1) result = (result * base) % mod;
+            exp = exp / 2;
+            base = (base * base) % mod;
+        }
+        return result;
+    }
+ 
+    // Point Addition: returns new point (rx, ry)
+    static long[] pointAdd(long px, long py, long qx, long qy) {
+        long lambda;
+ 
+        if (px == qx && py == qy) {
+            // Point doubling
+            lambda = ((3 * px * px + a) % p * modInverse(2 * py % p)) % p;
+        } else {
+            // Normal addition
+            lambda = ((qy - py + p) % p * modInverse((qx - px + p) % p)) % p;
+        }
+ 
+        long rx = (lambda * lambda - px - qx + 2 * p) % p;
+        long ry = (lambda * (px - rx + p) % p - py + p) % p;
+        return new long[]{rx, ry};
+    }
+ 
+    // Scalar Multiplication: k * P
+    static long[] scalarMultiply(long px, long py, int k) {
+        long rx = px, ry = py;
+        for (int i = 1; i < k; i++) {
+            long[] result = pointAdd(rx, ry, px, py);
+            rx = result[0];
+            ry = result[1];
+        }
+        return new long[]{rx, ry};
+    }
+ 
+    public static void main(String[] args) {
+        long px = 3, py = 6;  // Generator point G on the curve
+ 
+        System.out.println("=== Elliptic Curve Arithmetic ===");
+        System.out.println("Curve: y^2 = x^3 + 2x + 3 (mod 97)");
+        System.out.println("G = (" + px + ", " + py + ")");
+ 
+        // 2G = G + G
+        long[] g2 = pointAdd(px, py, px, py);
+        System.out.println("2G = (" + g2[0] + ", " + g2[1] + ")");
+ 
+        // 3G = 2G + G
+        long[] g3 = pointAdd(g2[0], g2[1], px, py);
+        System.out.println("3G = (" + g3[0] + ", " + g3[1] + ")");
+ 
+        // 5G using scalar multiply
+        long[] g5 = scalarMultiply(px, py, 5);
+        System.out.println("5G = (" + g5[0] + ", " + g5[1] + ")");
+    }
+}
+
+[25/03/26, 1:07:53 PM] Haroon Ziyadd: // RSA - Simple Implementation using Core Concept
+// Concept: Encrypt = M^e mod n,  Decrypt = C^d mod n
+
+import java.math.BigInteger;
+
+public class RSASimple {
+
+    // ── Key values (small numbers for easy understanding) ──
+    static BigInteger p, q, n, e, d;
+
+    // STEP 1: Choose two primes and compute keys
+    static void generateKeys() {
+        p = BigInteger.valueOf(61);    // prime 1
+        q = BigInteger.valueOf(53);    // prime 2
+
+        n = p.multiply(q);             // n = 61 * 53 = 3233
+
+        BigInteger phi = (p.subtract(BigInteger.ONE))
+                        .multiply(q.subtract(BigInteger.ONE));
+        // phi = (61-1)(53-1) = 60 * 52 = 3120
+
+        e = BigInteger.valueOf(17);    // public exponent (must be coprime to phi)
+        // d = e^-1 mod phi
+        d = e.modInverse(phi);         // d = 2753
+
+        System.out.println("p = " + p + ",  q = " + q);
+        System.out.println("n = p*q = " + n);
+        System.out.println("phi(n) = (p-1)(q-1) = " + phi);
+        System.out.println("e (public)  = " + e);
+        System.out.println("d (private) = " + d);
+    }
+
+    // STEP 2: Fast Exponentiation (Square-and-Multiply)
+    // Computes base^exp mod m  efficiently
+    static BigInteger fastExp(BigInteger base, BigInteger exp, BigInteger mod) {
+        BigInteger result = BigInteger.ONE;
+        base = base.mod(mod);
+        while (exp.compareTo(BigInteger.ZERO) > 0) {
+            if (exp.testBit(0))                        // if exponent bit is 1
+                result = result.multiply(base).mod(mod);
+            exp  = exp.shiftRight(1);                  // shift right (divide by 2)
+            base = base.multiply(base).mod(mod);       // square the base
+        }
+        return result;
+    }
+
+    // STEP 3: Encrypt  →  C = M^e mod n
+    static BigInteger encrypt(BigInteger M) {
+        return fastExp(M, e, n);
+    }
+
+    // STEP 4: Decrypt  →  M = C^d mod n
+    static BigInteger decrypt(BigInteger C) {
+        return fastExp(C, d, n);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("===== RSA Simple Implementation =====");
+        System.out.println();
+
+        generateKeys();
+        System.out.println();
+
+        // Encrypt and Decrypt a number
+        BigInteger message = BigInteger.valueOf(65);   // message M = 65
+        System.out.println("Original Message  : " + message);
+
+        BigInteger ciphertext  = encrypt(message);
+        System.out.println("Encrypted (C)     : " + ciphertext);  // C = 65^17 mod 3233
+
+        BigInteger decrypted   = decrypt(ciphertext);
+        System.out.println("Decrypted (M)     : " + decrypted);   // M = C^2753 mod 3233
+
+        System.out.println("Match?            : " + message.equals(decrypted));
+    }
+}
+
+// Diffie-Hellman - Simple Implementation using Core Concept
+// Concept: Both parties compute g^private mod p independently
+//          and arrive at the same shared secret
+
+public class DHSimple {
+
+    public static void main(String[] args) {
+        System.out.println("===== Diffie-Hellman Simple Implementation =====");
+        System.out.println();
+
+        // ── STEP 1: Public parameters (known to everyone) ──
+        long p = 23;   // a prime number
+        long g = 5;    // a primitive root (generator) of p
+
+        System.out.println("Public parameters:");
+        System.out.println("  p (prime)     = " + p);
+        System.out.println("  g (generator) = " + g);
+        System.out.println();
+
+        // ── STEP 2: Alice picks a private key ──
+        long alicePrivate = 6;                         // Alice's secret: a = 6
+        long alicePublic  = modPow(g, alicePrivate, p);// A = g^a mod p = 5^6 mod 23 = 8
+        System.out.println("Alice:");
+        System.out.println("  Private key a = " + alicePrivate);
+        System.out.println("  Public  key A = g^a mod p = " + alicePublic);
+        System.out.println();
+
+        // ── STEP 3: Bob picks a private key ──
+        long bobPrivate = 15;                          // Bob's secret: b = 15
+        long bobPublic  = modPow(g, bobPrivate, p);    // B = g^b mod p = 5^15 mod 23 = 19
+        System.out.println("Bob:");
+        System.out.println("  Private key b = " + bobPrivate);
+        System.out.println("  Public  key B = g^b mod p = " + bobPublic);
+        System.out.println();
+
+        // ── STEP 4: Exchange public keys and compute shared secret ──
+        long aliceSecret = modPow(bobPublic,   alicePrivate, p); // K = B^a mod p
+        long bobSecret   = modPow(alicePublic, bobPrivate,   p); // K = A^b mod p
+
+        System.out.println("Shared Secret (Alice): B^a mod p = " + aliceSecret);
+        System.out.println("Shared Secret (Bob)  : A^b mod p = " + bobSecret);
+        System.out.println("Secrets Match?       : " + (aliceSecret == bobSecret));
+        System.out.println();
+
+        // ── STEP 5: Use shared secret as key to encrypt/decrypt a message ──
+        int message = 9;   // simple number message
+        System.out.println("Message to send : " + message);
+
+        // Simple XOR encrypt/decrypt using shared secret as key
+        int encrypted = message ^ (int) aliceSecret;   // Alice encrypts
+        int decrypted = encrypted ^ (int) bobSecret;   // Bob decrypts
+
+        System.out.println("Encrypted (XOR) : " + encrypted);
+        System.out.println("Decrypted (XOR) : " + decrypted);
+        System.out.println("Match?          : " + (message == decrypted));
+    }
+
+    // Fast modular exponentiation: base^exp mod m
+    static long modPow(long base, long exp, long mod) {
+        long result = 1;
+        base = base % mod;
+        while (exp > 0) {
+            if (exp % 2 == 1)            // if exponent is odd
+                result = (result * base) % mod;
+            exp  = exp / 2;              // halve the exponent
+            base = (base * base) % mod;  // square the base
+        }
+        return result;
+    }
+}
