@@ -1,0 +1,300 @@
+{"text": "Paid Rs. 6652.47 for medicine.", "label": {"title": "Medicine", "amount": 6652.47, "type": "expense", "category": "Health"}}
+{"text": "Got paid ₹11777.98 today from grandma.", "label": {"title": "Cashback Reward", "amount": 11777.98, "type": "income", "category": "Income"}}
+{"text": "Renewed my video game, Rs. 2761.1 charged by Steam.", "label": {"title": "Video Game", "amount": 2761.1, "type": "expense", "category": "Entertainment"}}
+{"text": "Dropped ₹1959.87 on a book at Target.", "label": {"title": "A Book", "amount": 1959.87, "type": "expense", "category": "Shopping"}}
+{"text": "Paid Rs. 6812.63 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 6812.63, "type": "expense", "category": "Entertainment"}}
+{"text": "Rs. 22231.04 for phone bill, ouch.", "label": {"title": "Phone Bill", "amount": 22231.04, "type": "expense", "category": "Bills"}}
+{"text": "Rs. 2069.81 for breakfast, ouch.", "label": {"title": "Breakfast", "amount": 2069.81, "type": "expense", "category": "Food"}}
+{"text": "Dropped ₹67099.05 on internet bill at Comcast.", "label": {"title": "Internet Bill", "amount": 67099.05, "type": "expense", "category": "Bills"}}
+{"text": "Paid ₹5318.22 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 5318.22, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent Rs. 2425.92 on coffee at the local diner today.", "label": {"title": "Coffee", "amount": 2425.92, "type": "expense", "category": "Food"}}
+{"text": "Made Rs. 52513.25 from gift money.", "label": {"title": "Gift Money", "amount": 52513.25, "type": "income", "category": "Income"}}
+{"text": "Dropped ₹2931.86 on cloud storage plan at iCloud.", "label": {"title": "Cloud Storage Plan", "amount": 2931.86, "type": "expense", "category": "Subscriptions"}}
+{"text": "Spent ₹608.9 on movie ticket at AMC today.", "label": {"title": "Movie Ticket", "amount": 608.9, "type": "expense", "category": "Entertainment"}}
+{"text": "Today I paid ₹4625.82 for my gas.", "label": {"title": "Gas", "amount": 4625.82, "type": "expense", "category": "Transport"}}
+{"text": "Spent ₹10190.67 on dental checkup at Planet Fitness today.", "label": {"title": "Dental Checkup", "amount": 10190.67, "type": "expense", "category": "Health"}}
+{"text": "grandma sent me Rs. 109953.99.", "label": {"title": "Freelance Payment", "amount": 109953.99, "type": "income", "category": "Income"}}
+{"text": "Spent Rs. 1231.47 on parking at Shell today.", "label": {"title": "Parking", "amount": 1231.47, "type": "expense", "category": "Transport"}}
+{"text": "Dropped ₹23863.02 on medicine at Planet Fitness.", "label": {"title": "Medicine", "amount": 23863.02, "type": "expense", "category": "Health"}}
+{"text": "Rs. 2887.75 for coffee, ouch.", "label": {"title": "Coffee", "amount": 2887.75, "type": "expense", "category": "Food"}}
+{"text": "Spent Rs. 495.54 on uber ride at Lyft today.", "label": {"title": "Uber Ride", "amount": 495.54, "type": "expense", "category": "Transport"}}
+{"text": "Dropped ₹967.82 on cloud storage plan at Netflix.", "label": {"title": "Cloud Storage Plan", "amount": 967.82, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got taxi from Lyft, cost me ₹1934.86.", "label": {"title": "Taxi", "amount": 1934.86, "type": "expense", "category": "Transport"}}
+{"text": "Bought headphones today, it was ₹3580.52.", "label": {"title": "Headphones", "amount": 3580.52, "type": "expense", "category": "Shopping"}}
+{"text": "Grabbed concert ticket at Spotify — Rs. 6077.06 gone.", "label": {"title": "Concert Ticket", "amount": 6077.06, "type": "expense", "category": "Entertainment"}}
+{"text": "Rs. 3347.4 for cloud storage plan, ouch.", "label": {"title": "Cloud Storage Plan", "amount": 3347.4, "type": "expense", "category": "Subscriptions"}}
+{"text": "Today I paid ₹702.18 for my uber ride.", "label": {"title": "Uber Ride", "amount": 702.18, "type": "expense", "category": "Transport"}}
+{"text": "Grabbed gym membership at iCloud — Rs. 579.51 gone.", "label": {"title": "Gym Membership", "amount": 579.51, "type": "expense", "category": "Subscriptions"}}
+{"text": "Grabbed a jacket at Amazon — Rs. 2695.44 gone.", "label": {"title": "A Jacket", "amount": 2695.44, "type": "expense", "category": "Shopping"}}
+{"text": "Ticketmaster charged me ₹4232.39 for Spotify subscription.", "label": {"title": "Subscription: Spotify", "amount": 4232.39, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent Rs. 422.13 on Spotify subscription at Ticketmaster today.", "label": {"title": "Subscription: Spotify", "amount": 422.13, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid ₹49294.53 for rent.", "label": {"title": "Rent", "amount": 49294.53, "type": "expense", "category": "Bills"}}
+{"text": "Today I paid Rs. 1115.07 for my uber ride.", "label": {"title": "Uber Ride", "amount": 1115.07, "type": "expense", "category": "Transport"}}
+{"text": "Dropped Rs. 19633.72 on dental checkup at Planet Fitness.", "label": {"title": "Dental Checkup", "amount": 19633.72, "type": "expense", "category": "Health"}}
+{"text": "Bought magazine subscription today, it was ₹1103.2.", "label": {"title": "Subscription: Magazine", "amount": 1103.2, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got Spotify subscription from AMC, cost me Rs. 7301.03.", "label": {"title": "Subscription: Spotify", "amount": 7301.03, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent ₹2663.29 on bus pass at the parking garage today.", "label": {"title": "Bus Pass", "amount": 2663.29, "type": "expense", "category": "Transport"}}
+{"text": "Paid Rs. 1921.97 for breakfast.", "label": {"title": "Breakfast", "amount": 1921.97, "type": "expense", "category": "Food"}}
+{"text": "Rs. 5604.65 for phone case, ouch.", "label": {"title": "Phone Case", "amount": 5604.65, "type": "expense", "category": "Shopping"}}
+{"text": "Made ₹193280.81 from salary.", "label": {"title": "Salary", "amount": 193280.81, "type": "income", "category": "Income"}}
+{"text": "Dropped ₹1318.74 on train ticket at Uber.", "label": {"title": "Train Ticket", "amount": 1318.74, "type": "expense", "category": "Transport"}}
+{"text": "Today I paid ₹19844.9 for my dental checkup.", "label": {"title": "Dental Checkup", "amount": 19844.9, "type": "expense", "category": "Health"}}
+{"text": "the clinic charged me ₹24087.91 for doctor visit.", "label": {"title": "Doctor Visit", "amount": 24087.91, "type": "expense", "category": "Health"}}
+{"text": "Renewed my dental checkup, Rs. 15290.88 charged by the clinic.", "label": {"title": "Dental Checkup", "amount": 15290.88, "type": "expense", "category": "Health"}}
+{"text": "Paid Rs. 2297.09 for snacks.", "label": {"title": "Snacks", "amount": 2297.09, "type": "expense", "category": "Food"}}
+{"text": "Spent ₹5461.4 on Netflix subscription at Spotify today.", "label": {"title": "Subscription: Netflix", "amount": 5461.4, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my headphones, ₹12901.66 charged by the mall.", "label": {"title": "Headphones", "amount": 12901.66, "type": "expense", "category": "Shopping"}}
+{"text": "the power company charged me ₹5265.81 for water bill.", "label": {"title": "Water Bill", "amount": 5265.81, "type": "expense", "category": "Bills"}}
+{"text": "Today I paid Rs. 5343.95 for my Spotify subscription.", "label": {"title": "Subscription: Spotify", "amount": 5343.95, "type": "expense", "category": "Entertainment"}}
+{"text": "Today I paid ₹18631.62 for my electricity bill.", "label": {"title": "Electricity Bill", "amount": 18631.62, "type": "expense", "category": "Bills"}}
+{"text": "Bought dental checkup today, it was Rs. 11561.5.", "label": {"title": "Dental Checkup", "amount": 11561.5, "type": "expense", "category": "Health"}}
+{"text": "Bought taxi today, it was Rs. 1399.9.", "label": {"title": "Taxi", "amount": 1399.9, "type": "expense", "category": "Transport"}}
+{"text": "Got a book from Amazon, cost me ₹12354.63.", "label": {"title": "A Book", "amount": 12354.63, "type": "expense", "category": "Shopping"}}
+{"text": "Paid Rs. 2187.77 for gas.", "label": {"title": "Gas", "amount": 2187.77, "type": "expense", "category": "Transport"}}
+{"text": "Bought Spotify subscription today, it was ₹6483.1.", "label": {"title": "Subscription: Spotify", "amount": 6483.1, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid ₹3203.74 for magazine subscription.", "label": {"title": "Subscription: Magazine", "amount": 3203.74, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got paid Rs. 46794.33 today from a client.", "label": {"title": "Cashback Reward", "amount": 46794.33, "type": "income", "category": "Income"}}
+{"text": "Got doctor visit from CVS, cost me Rs. 1278.68.", "label": {"title": "Doctor Visit", "amount": 1278.68, "type": "expense", "category": "Health"}}
+{"text": "Paid Rs. 3584.44 for uber ride.", "label": {"title": "Uber Ride", "amount": 3584.44, "type": "expense", "category": "Transport"}}
+{"text": "Bought internet bill today, it was Rs. 8660.3.", "label": {"title": "Internet Bill", "amount": 8660.3, "type": "expense", "category": "Bills"}}
+{"text": "Grabbed doctor visit at CVS — ₹22280.42 gone.", "label": {"title": "Doctor Visit", "amount": 22280.42, "type": "expense", "category": "Health"}}
+{"text": "Spent ₹3307.58 on bus pass at the parking garage today.", "label": {"title": "Bus Pass", "amount": 3307.58, "type": "expense", "category": "Transport"}}
+{"text": "Bought a book today, it was ₹18683.44.", "label": {"title": "A Book", "amount": 18683.44, "type": "expense", "category": "Shopping"}}
+{"text": "Shell charged me ₹365.33 for parking.", "label": {"title": "Parking", "amount": 365.33, "type": "expense", "category": "Transport"}}
+{"text": "Grabbed video game at Ticketmaster — ₹3499.46 gone.", "label": {"title": "Video Game", "amount": 3499.46, "type": "expense", "category": "Entertainment"}}
+{"text": "Got paid Rs. 14584.46 today from the store.", "label": {"title": "Refund", "amount": 14584.46, "type": "income", "category": "Income"}}
+{"text": "Spent ₹803.98 on train ticket at the parking garage today.", "label": {"title": "Train Ticket", "amount": 803.98, "type": "expense", "category": "Transport"}}
+{"text": "₹635.66 for new shoes, ouch.", "label": {"title": "New Shoes", "amount": 635.66, "type": "expense", "category": "Shopping"}}
+{"text": "Rs. 3340.22 for parking, ouch.", "label": {"title": "Parking", "amount": 3340.22, "type": "expense", "category": "Transport"}}
+{"text": "Grabbed video game at AMC — Rs. 5360.96 gone.", "label": {"title": "Video Game", "amount": 5360.96, "type": "expense", "category": "Entertainment"}}
+{"text": "Planet Fitness charged me Rs. 1372.79 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 1372.79, "type": "expense", "category": "Subscriptions"}}
+{"text": "Bought dental checkup today, it was Rs. 20683.39.", "label": {"title": "Dental Checkup", "amount": 20683.39, "type": "expense", "category": "Health"}}
+{"text": "iCloud charged me ₹3239.61 for gym membership.", "label": {"title": "Gym Membership", "amount": 3239.61, "type": "expense", "category": "Subscriptions"}}
+{"text": "Grabbed lunch at Whole Foods — ₹1737.5 gone.", "label": {"title": "Lunch", "amount": 1737.5, "type": "expense", "category": "Food"}}
+{"text": "Grabbed Netflix subscription at AMC — ₹7937.22 gone.", "label": {"title": "Subscription: Netflix", "amount": 7937.22, "type": "expense", "category": "Entertainment"}}
+{"text": "₹2183.59 for video game, ouch.", "label": {"title": "Video Game", "amount": 2183.59, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my new shoes, Rs. 17387.63 charged by Nike store.", "label": {"title": "New Shoes", "amount": 17387.63, "type": "expense", "category": "Shopping"}}
+{"text": "Grabbed electricity bill at Verizon — ₹23480.37 gone.", "label": {"title": "Electricity Bill", "amount": 23480.37, "type": "expense", "category": "Bills"}}
+{"text": "Rs. 8078.58 for new shoes, ouch.", "label": {"title": "New Shoes", "amount": 8078.58, "type": "expense", "category": "Shopping"}}
+{"text": "iCloud charged me ₹214.8 for magazine subscription.", "label": {"title": "Subscription: Magazine", "amount": 214.8, "type": "expense", "category": "Subscriptions"}}
+{"text": "Rs. 56364.67 for water bill, ouch.", "label": {"title": "Water Bill", "amount": 56364.67, "type": "expense", "category": "Bills"}}
+{"text": "Made ₹197589.88 from refund.", "label": {"title": "Refund", "amount": 197589.88, "type": "income", "category": "Income"}}
+{"text": "Bought Netflix subscription today, it was Rs. 2031.52.", "label": {"title": "Subscription: Netflix", "amount": 2031.52, "type": "expense", "category": "Subscriptions"}}
+{"text": "Spent Rs. 9247.73 on a jacket at Nike store today.", "label": {"title": "A Jacket", "amount": 9247.73, "type": "expense", "category": "Shopping"}}
+{"text": "Renewed my dental checkup, Rs. 14535.07 charged by the clinic.", "label": {"title": "Dental Checkup", "amount": 14535.07, "type": "expense", "category": "Health"}}
+{"text": "Spent Rs. 2105.33 on taxi at the parking garage today.", "label": {"title": "Taxi", "amount": 2105.33, "type": "expense", "category": "Transport"}}
+{"text": "Dropped ₹17767.31 on new shoes at Amazon.", "label": {"title": "New Shoes", "amount": 17767.31, "type": "expense", "category": "Shopping"}}
+{"text": "Got Netflix subscription from iCloud, cost me Rs. 2091.12.", "label": {"title": "Subscription: Netflix", "amount": 2091.12, "type": "expense", "category": "Subscriptions"}}
+{"text": "Amazon charged me ₹4533.27 for a book.", "label": {"title": "A Book", "amount": 4533.27, "type": "expense", "category": "Shopping"}}
+{"text": "₹4909.81 for movie ticket, ouch.", "label": {"title": "Movie Ticket", "amount": 4909.81, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent ₹4878.51 on new shoes at the mall today.", "label": {"title": "New Shoes", "amount": 4878.51, "type": "expense", "category": "Shopping"}}
+{"text": "Uber charged me Rs. 1764.63 for train ticket.", "label": {"title": "Train Ticket", "amount": 1764.63, "type": "expense", "category": "Transport"}}
+{"text": "Paid Rs. 35360.08 for water bill.", "label": {"title": "Water Bill", "amount": 35360.08, "type": "expense", "category": "Bills"}}
+{"text": "a client sent me Rs. 191492.35.", "label": {"title": "Cashback Reward", "amount": 191492.35, "type": "income", "category": "Income"}}
+{"text": "Dropped ₹16545.59 on gym membership at CVS.", "label": {"title": "Gym Membership", "amount": 16545.59, "type": "expense", "category": "Health"}}
+{"text": "the clinic charged me Rs. 1019.73 for doctor visit.", "label": {"title": "Doctor Visit", "amount": 1019.73, "type": "expense", "category": "Health"}}
+{"text": "Renewed my concert ticket, ₹6241.31 charged by Spotify.", "label": {"title": "Concert Ticket", "amount": 6241.31, "type": "expense", "category": "Entertainment"}}
+{"text": "Bought medicine today, it was ₹4327.97.", "label": {"title": "Medicine", "amount": 4327.97, "type": "expense", "category": "Health"}}
+{"text": "Planet Fitness charged me ₹24535.87 for doctor visit.", "label": {"title": "Doctor Visit", "amount": 24535.87, "type": "expense", "category": "Health"}}
+{"text": "Today I paid Rs. 912.26 for my snacks.", "label": {"title": "Snacks", "amount": 912.26, "type": "expense", "category": "Food"}}
+{"text": "Got cloud storage plan from iCloud, cost me Rs. 1129.48.", "label": {"title": "Cloud Storage Plan", "amount": 1129.48, "type": "expense", "category": "Subscriptions"}}
+{"text": "Today I paid Rs. 3648.85 for my video game.", "label": {"title": "Video Game", "amount": 3648.85, "type": "expense", "category": "Entertainment"}}
+{"text": "Made ₹66345.82 from refund.", "label": {"title": "Refund", "amount": 66345.82, "type": "income", "category": "Income"}}
+{"text": "Bought Netflix subscription today, it was ₹7626.35.", "label": {"title": "Subscription: Netflix", "amount": 7626.35, "type": "expense", "category": "Entertainment"}}
+{"text": "₹11248.91 for a book, ouch.", "label": {"title": "A Book", "amount": 11248.91, "type": "expense", "category": "Shopping"}}
+{"text": "Today I paid Rs. 7348.59 for my Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 7348.59, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my coffee, Rs. 2954.06 charged by Domino's.", "label": {"title": "Coffee", "amount": 2954.06, "type": "expense", "category": "Food"}}
+{"text": "Dropped Rs. 1937.62 on Netflix subscription at Planet Fitness.", "label": {"title": "Subscription: Netflix", "amount": 1937.62, "type": "expense", "category": "Subscriptions"}}
+{"text": "Paid ₹3958.73 for gym membership.", "label": {"title": "Gym Membership", "amount": 3958.73, "type": "expense", "category": "Subscriptions"}}
+{"text": "Dropped Rs. 3908.9 on video game at Steam.", "label": {"title": "Video Game", "amount": 3908.9, "type": "expense", "category": "Entertainment"}}
+{"text": "the pharmacy charged me Rs. 11199.44 for medicine.", "label": {"title": "Medicine", "amount": 11199.44, "type": "expense", "category": "Health"}}
+{"text": "Dropped Rs. 2416.38 on pizza at Domino's.", "label": {"title": "Pizza", "amount": 2416.38, "type": "expense", "category": "Food"}}
+{"text": "Rs. 20875.84 for water bill, ouch.", "label": {"title": "Water Bill", "amount": 20875.84, "type": "expense", "category": "Bills"}}
+{"text": "Got Netflix subscription from Spotify, cost me Rs. 2081.08.", "label": {"title": "Subscription: Netflix", "amount": 2081.08, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got gym membership from the pharmacy, cost me Rs. 17209.17.", "label": {"title": "Gym Membership", "amount": 17209.17, "type": "expense", "category": "Health"}}
+{"text": "Renewed my parking, ₹4962.17 charged by the parking garage.", "label": {"title": "Parking", "amount": 4962.17, "type": "expense", "category": "Transport"}}
+{"text": "Renewed my coffee, Rs. 192.26 charged by Domino's.", "label": {"title": "Coffee", "amount": 192.26, "type": "expense", "category": "Food"}}
+{"text": "Renewed my medicine, Rs. 11366.78 charged by the clinic.", "label": {"title": "Medicine", "amount": 11366.78, "type": "expense", "category": "Health"}}
+{"text": "Today I paid ₹2938.94 for my movie ticket.", "label": {"title": "Movie Ticket", "amount": 2938.94, "type": "expense", "category": "Entertainment"}}
+{"text": "Bought lunch today, it was Rs. 1653.36.", "label": {"title": "Lunch", "amount": 1653.36, "type": "expense", "category": "Food"}}
+{"text": "Got paid ₹107464.84 today from grandma.", "label": {"title": "Gift Money", "amount": 107464.84, "type": "income", "category": "Income"}}
+{"text": "Got Netflix subscription from Ticketmaster, cost me ₹6688.07.", "label": {"title": "Subscription: Netflix", "amount": 6688.07, "type": "expense", "category": "Entertainment"}}
+{"text": "Got phone bill from Comcast, cost me Rs. 26334.83.", "label": {"title": "Phone Bill", "amount": 26334.83, "type": "expense", "category": "Bills"}}
+{"text": "Deposited Rs. 137781.28 — cashback reward from grandma.", "label": {"title": "Cashback Reward", "amount": 137781.28, "type": "income", "category": "Income"}}
+{"text": "Paid ₹11482.74 for doctor visit.", "label": {"title": "Doctor Visit", "amount": 11482.74, "type": "expense", "category": "Health"}}
+{"text": "Dropped Rs. 53577 on phone bill at Comcast.", "label": {"title": "Phone Bill", "amount": 53577, "type": "expense", "category": "Bills"}}
+{"text": "₹4403.07 for train ticket, ouch.", "label": {"title": "Train Ticket", "amount": 4403.07, "type": "expense", "category": "Transport"}}
+{"text": "Grabbed concert ticket at Netflix — Rs. 6977.07 gone.", "label": {"title": "Concert Ticket", "amount": 6977.07, "type": "expense", "category": "Entertainment"}}
+{"text": "Bought pizza today, it was Rs. 3287.98.", "label": {"title": "Pizza", "amount": 3287.98, "type": "expense", "category": "Food"}}
+{"text": "Got rent from the power company, cost me ₹71363.71.", "label": {"title": "Rent", "amount": 71363.71, "type": "expense", "category": "Bills"}}
+{"text": "Bought magazine subscription today, it was ₹3971.26.", "label": {"title": "Subscription: Magazine", "amount": 3971.26, "type": "expense", "category": "Subscriptions"}}
+{"text": "₹16190.11 for headphones, ouch.", "label": {"title": "Headphones", "amount": 16190.11, "type": "expense", "category": "Shopping"}}
+{"text": "Received Rs. 40223.96 as cashback reward.", "label": {"title": "Cashback Reward", "amount": 40223.96, "type": "income", "category": "Income"}}
+{"text": "Paid Rs. 14887.11 for gym membership.", "label": {"title": "Gym Membership", "amount": 14887.11, "type": "expense", "category": "Health"}}
+{"text": "Renewed my dental checkup, Rs. 13017.6 charged by the clinic.", "label": {"title": "Dental Checkup", "amount": 13017.6, "type": "expense", "category": "Health"}}
+{"text": "the bank sent me ₹38960.92.", "label": {"title": "Refund", "amount": 38960.92, "type": "income", "category": "Income"}}
+{"text": "Paid ₹3809.62 for coffee.", "label": {"title": "Coffee", "amount": 3809.62, "type": "expense", "category": "Food"}}
+{"text": "Rs. 2513.18 for magazine subscription, ouch.", "label": {"title": "Subscription: Magazine", "amount": 2513.18, "type": "expense", "category": "Subscriptions"}}
+{"text": "Renewed my bus pass, ₹4984.02 charged by the metro station.", "label": {"title": "Bus Pass", "amount": 4984.02, "type": "expense", "category": "Transport"}}
+{"text": "Renewed my gym membership, ₹741.56 charged by Netflix.", "label": {"title": "Gym Membership", "amount": 741.56, "type": "expense", "category": "Subscriptions"}}
+{"text": "₹67207.15 for rent, ouch.", "label": {"title": "Rent", "amount": 67207.15, "type": "expense", "category": "Bills"}}
+{"text": "Got a book from Nike store, cost me ₹6825.17.", "label": {"title": "A Book", "amount": 6825.17, "type": "expense", "category": "Shopping"}}
+{"text": "Spent Rs. 1157.58 on dental checkup at the clinic today.", "label": {"title": "Dental Checkup", "amount": 1157.58, "type": "expense", "category": "Health"}}
+{"text": "₹16362.82 for a jacket, ouch.", "label": {"title": "A Jacket", "amount": 16362.82, "type": "expense", "category": "Shopping"}}
+{"text": "Got gas from the parking garage, cost me ₹2329.46.", "label": {"title": "Gas", "amount": 2329.46, "type": "expense", "category": "Transport"}}
+{"text": "Dropped ₹6550.97 on concert ticket at Netflix.", "label": {"title": "Concert Ticket", "amount": 6550.97, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my pizza, Rs. 739.43 charged by Whole Foods.", "label": {"title": "Pizza", "amount": 739.43, "type": "expense", "category": "Food"}}
+{"text": "Today I paid ₹4703.59 for my a book.", "label": {"title": "A Book", "amount": 4703.59, "type": "expense", "category": "Shopping"}}
+{"text": "Steam charged me Rs. 1708.67 for movie ticket.", "label": {"title": "Movie Ticket", "amount": 1708.67, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid Rs. 442.9 for train ticket.", "label": {"title": "Train Ticket", "amount": 442.9, "type": "expense", "category": "Transport"}}
+{"text": "Made Rs. 236871.25 from gift money.", "label": {"title": "Gift Money", "amount": 236871.25, "type": "income", "category": "Income"}}
+{"text": "Bought movie ticket today, it was ₹1894.7.", "label": {"title": "Movie Ticket", "amount": 1894.7, "type": "expense", "category": "Entertainment"}}
+{"text": "Comcast charged me Rs. 10971.46 for internet bill.", "label": {"title": "Internet Bill", "amount": 10971.46, "type": "expense", "category": "Bills"}}
+{"text": "Spent ₹4784.2 on a jacket at Best Buy today.", "label": {"title": "A Jacket", "amount": 4784.2, "type": "expense", "category": "Shopping"}}
+{"text": "Today I paid Rs. 2930.91 for my concert ticket.", "label": {"title": "Concert Ticket", "amount": 2930.91, "type": "expense", "category": "Entertainment"}}
+{"text": "Made ₹230999.48 from freelance payment.", "label": {"title": "Freelance Payment", "amount": 230999.48, "type": "income", "category": "Income"}}
+{"text": "Verizon charged me Rs. 43398.57 for rent.", "label": {"title": "Rent", "amount": 43398.57, "type": "expense", "category": "Bills"}}
+{"text": "Grabbed cloud storage plan at Planet Fitness — ₹2895.25 gone.", "label": {"title": "Cloud Storage Plan", "amount": 2895.25, "type": "expense", "category": "Subscriptions"}}
+{"text": "Bought rent today, it was ₹60840.39.", "label": {"title": "Rent", "amount": 60840.39, "type": "expense", "category": "Bills"}}
+{"text": "₹1638.59 for cloud storage plan, ouch.", "label": {"title": "Cloud Storage Plan", "amount": 1638.59, "type": "expense", "category": "Subscriptions"}}
+{"text": "Dropped Rs. 2110.41 on Netflix subscription at Netflix.", "label": {"title": "Subscription: Netflix", "amount": 2110.41, "type": "expense", "category": "Entertainment"}}
+{"text": "Deposited Rs. 156253.86 — cashback reward from grandma.", "label": {"title": "Cashback Reward", "amount": 156253.86, "type": "income", "category": "Income"}}
+{"text": "Made Rs. 187797.38 from salary.", "label": {"title": "Salary", "amount": 187797.38, "type": "income", "category": "Income"}}
+{"text": "Paid ₹5376.17 for movie ticket.", "label": {"title": "Movie Ticket", "amount": 5376.17, "type": "expense", "category": "Entertainment"}}
+{"text": "Got video game from Steam, cost me ₹7420.39.", "label": {"title": "Video Game", "amount": 7420.39, "type": "expense", "category": "Entertainment"}}
+{"text": "Bought doctor visit today, it was ₹6902.6.", "label": {"title": "Doctor Visit", "amount": 6902.6, "type": "expense", "category": "Health"}}
+{"text": "Spent Rs. 4195.12 on parking at Shell today.", "label": {"title": "Parking", "amount": 4195.12, "type": "expense", "category": "Transport"}}
+{"text": "Dropped Rs. 32110.65 on electricity bill at the power company.", "label": {"title": "Electricity Bill", "amount": 32110.65, "type": "expense", "category": "Bills"}}
+{"text": "Spent Rs. 3035.37 on dinner at the cafe today.", "label": {"title": "Dinner", "amount": 3035.37, "type": "expense", "category": "Food"}}
+{"text": "₹419.12 for cloud storage plan, ouch.", "label": {"title": "Cloud Storage Plan", "amount": 419.12, "type": "expense", "category": "Subscriptions"}}
+{"text": "Bought taxi today, it was Rs. 1767.23.", "label": {"title": "Taxi", "amount": 1767.23, "type": "expense", "category": "Transport"}}
+{"text": "the landlord charged me ₹56501.48 for phone bill.", "label": {"title": "Phone Bill", "amount": 56501.48, "type": "expense", "category": "Bills"}}
+{"text": "Dropped Rs. 2448.6 on groceries at the local diner.", "label": {"title": "Groceries", "amount": 2448.6, "type": "expense", "category": "Food"}}
+{"text": "Bought dinner today, it was Rs. 1976.43.", "label": {"title": "Dinner", "amount": 1976.43, "type": "expense", "category": "Food"}}
+{"text": "Grabbed lunch at the local diner — Rs. 1003.15 gone.", "label": {"title": "Lunch", "amount": 1003.15, "type": "expense", "category": "Food"}}
+{"text": "grandma sent me Rs. 218378.58.", "label": {"title": "Freelance Payment", "amount": 218378.58, "type": "income", "category": "Income"}}
+{"text": "Received Rs. 17249.66 as freelance payment.", "label": {"title": "Freelance Payment", "amount": 17249.66, "type": "income", "category": "Income"}}
+{"text": "Bought new shoes today, it was ₹9986.82.", "label": {"title": "New Shoes", "amount": 9986.82, "type": "expense", "category": "Shopping"}}
+{"text": "Dropped Rs. 2699.41 on video game at Steam.", "label": {"title": "Video Game", "amount": 2699.41, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid ₹13295.6 for dental checkup.", "label": {"title": "Dental Checkup", "amount": 13295.6, "type": "expense", "category": "Health"}}
+{"text": "Today I paid ₹2154.39 for my snacks.", "label": {"title": "Snacks", "amount": 2154.39, "type": "expense", "category": "Food"}}
+{"text": "Paid ₹2868.97 for lunch.", "label": {"title": "Lunch", "amount": 2868.97, "type": "expense", "category": "Food"}}
+{"text": "Bought Netflix subscription today, it was Rs. 4601.12.", "label": {"title": "Subscription: Netflix", "amount": 4601.12, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my Netflix subscription, Rs. 6231.43 charged by Steam.", "label": {"title": "Subscription: Netflix", "amount": 6231.43, "type": "expense", "category": "Entertainment"}}
+{"text": "Dropped ₹23107.04 on doctor visit at the clinic.", "label": {"title": "Doctor Visit", "amount": 23107.04, "type": "expense", "category": "Health"}}
+{"text": "Renewed my electricity bill, Rs. 28769.8 charged by the landlord.", "label": {"title": "Electricity Bill", "amount": 28769.8, "type": "expense", "category": "Bills"}}
+{"text": "Paid ₹1657.86 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 1657.86, "type": "expense", "category": "Entertainment"}}
+{"text": "Deposited ₹8737.9 — cashback reward from my employer.", "label": {"title": "Cashback Reward", "amount": 8737.9, "type": "income", "category": "Income"}}
+{"text": "Renewed my gas, ₹3476.75 charged by the parking garage.", "label": {"title": "Gas", "amount": 3476.75, "type": "expense", "category": "Transport"}}
+{"text": "Spent ₹21367.95 on internet bill at the landlord today.", "label": {"title": "Internet Bill", "amount": 21367.95, "type": "expense", "category": "Bills"}}
+{"text": "Planet Fitness charged me ₹260.56 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 260.56, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got cloud storage plan from Planet Fitness, cost me ₹3361.87.", "label": {"title": "Cloud Storage Plan", "amount": 3361.87, "type": "expense", "category": "Subscriptions"}}
+{"text": "Paid Rs. 3599.42 for groceries.", "label": {"title": "Groceries", "amount": 3599.42, "type": "expense", "category": "Food"}}
+{"text": "Rs. 339.67 for train ticket, ouch.", "label": {"title": "Train Ticket", "amount": 339.67, "type": "expense", "category": "Transport"}}
+{"text": "Paid ₹4420.68 for bus pass.", "label": {"title": "Bus Pass", "amount": 4420.68, "type": "expense", "category": "Transport"}}
+{"text": "Paid Rs. 4048.3 for train ticket.", "label": {"title": "Train Ticket", "amount": 4048.3, "type": "expense", "category": "Transport"}}
+{"text": "Today I paid ₹14075.94 for my water bill.", "label": {"title": "Water Bill", "amount": 14075.94, "type": "expense", "category": "Bills"}}
+{"text": "Bought a jacket today, it was Rs. 17953.52.", "label": {"title": "A Jacket", "amount": 17953.52, "type": "expense", "category": "Shopping"}}
+{"text": "Bought Netflix subscription today, it was ₹1981.05.", "label": {"title": "Subscription: Netflix", "amount": 1981.05, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid Rs. 1832.19 for cloud storage plan.", "label": {"title": "Cloud Storage Plan", "amount": 1832.19, "type": "expense", "category": "Subscriptions"}}
+{"text": "Renewed my bus pass, Rs. 3439.07 charged by Lyft.", "label": {"title": "Bus Pass", "amount": 3439.07, "type": "expense", "category": "Transport"}}
+{"text": "Got headphones from Amazon, cost me ₹1963.3.", "label": {"title": "Headphones", "amount": 1963.3, "type": "expense", "category": "Shopping"}}
+{"text": "Got breakfast from McDonald's, cost me ₹3184.82.", "label": {"title": "Breakfast", "amount": 3184.82, "type": "expense", "category": "Food"}}
+{"text": "₹41993.19 for rent, ouch.", "label": {"title": "Rent", "amount": 41993.19, "type": "expense", "category": "Bills"}}
+{"text": "Spent Rs. 3434.17 on coffee at Starbucks today.", "label": {"title": "Coffee", "amount": 3434.17, "type": "expense", "category": "Food"}}
+{"text": "Made ₹190072.23 from cashback reward.", "label": {"title": "Cashback Reward", "amount": 190072.23, "type": "income", "category": "Income"}}
+{"text": "Received Rs. 132525.97 as salary.", "label": {"title": "Salary", "amount": 132525.97, "type": "income", "category": "Income"}}
+{"text": "Spent ₹557.66 on coffee at McDonald's today.", "label": {"title": "Coffee", "amount": 557.66, "type": "expense", "category": "Food"}}
+{"text": "Today I paid ₹2535.75 for my dental checkup.", "label": {"title": "Dental Checkup", "amount": 2535.75, "type": "expense", "category": "Health"}}
+{"text": "grandma sent me ₹203129.56.", "label": {"title": "Refund", "amount": 203129.56, "type": "income", "category": "Income"}}
+{"text": "Rs. 1471.88 for magazine subscription, ouch.", "label": {"title": "Subscription: Magazine", "amount": 1471.88, "type": "expense", "category": "Subscriptions"}}
+{"text": "Today I paid ₹38869.9 for my internet bill.", "label": {"title": "Internet Bill", "amount": 38869.9, "type": "expense", "category": "Bills"}}
+{"text": "Today I paid Rs. 2653.45 for my concert ticket.", "label": {"title": "Concert Ticket", "amount": 2653.45, "type": "expense", "category": "Entertainment"}}
+{"text": "Got taxi from Uber, cost me Rs. 2780.53.", "label": {"title": "Taxi", "amount": 2780.53, "type": "expense", "category": "Transport"}}
+{"text": "Netflix charged me ₹3183.88 for cloud storage plan.", "label": {"title": "Cloud Storage Plan", "amount": 3183.88, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got paid Rs. 114971.07 today from the store.", "label": {"title": "Gift Money", "amount": 114971.07, "type": "income", "category": "Income"}}
+{"text": "₹48531.32 for rent, ouch.", "label": {"title": "Rent", "amount": 48531.32, "type": "expense", "category": "Bills"}}
+{"text": "Lyft charged me ₹4999.78 for bus pass.", "label": {"title": "Bus Pass", "amount": 4999.78, "type": "expense", "category": "Transport"}}
+{"text": "Renewed my phone case, Rs. 5672.66 charged by Best Buy.", "label": {"title": "Phone Case", "amount": 5672.66, "type": "expense", "category": "Shopping"}}
+{"text": "Spent Rs. 5922.43 on medicine at the pharmacy today.", "label": {"title": "Medicine", "amount": 5922.43, "type": "expense", "category": "Health"}}
+{"text": "Rs. 17719.95 for medicine, ouch.", "label": {"title": "Medicine", "amount": 17719.95, "type": "expense", "category": "Health"}}
+{"text": "Got rent from Verizon, cost me ₹71126.32.", "label": {"title": "Rent", "amount": 71126.32, "type": "expense", "category": "Bills"}}
+{"text": "Dropped ₹2013.94 on train ticket at Shell.", "label": {"title": "Train Ticket", "amount": 2013.94, "type": "expense", "category": "Transport"}}
+{"text": "Deposited Rs. 46004.85 — refund from the bank.", "label": {"title": "Refund", "amount": 46004.85, "type": "income", "category": "Income"}}
+{"text": "Steam charged me ₹5297.23 for Spotify subscription.", "label": {"title": "Subscription: Spotify", "amount": 5297.23, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent ₹4602.03 on train ticket at Shell today.", "label": {"title": "Train Ticket", "amount": 4602.03, "type": "expense", "category": "Transport"}}
+{"text": "Steam charged me Rs. 6854.95 for Spotify subscription.", "label": {"title": "Subscription: Spotify", "amount": 6854.95, "type": "expense", "category": "Entertainment"}}
+{"text": "Renewed my parking, Rs. 4031 charged by Shell.", "label": {"title": "Parking", "amount": 4031, "type": "expense", "category": "Transport"}}
+{"text": "the store sent me Rs. 55526.33.", "label": {"title": "Freelance Payment", "amount": 55526.33, "type": "income", "category": "Income"}}
+{"text": "Verizon charged me ₹47160 for rent.", "label": {"title": "Rent", "amount": 47160, "type": "expense", "category": "Bills"}}
+{"text": "Spent ₹4782.5 on headphones at Best Buy today.", "label": {"title": "Headphones", "amount": 4782.5, "type": "expense", "category": "Shopping"}}
+{"text": "Paid ₹1735.7 for headphones.", "label": {"title": "Headphones", "amount": 1735.7, "type": "expense", "category": "Shopping"}}
+{"text": "Spotify charged me Rs. 7877.04 for video game.", "label": {"title": "Video Game", "amount": 7877.04, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid Rs. 1580.53 for gym membership.", "label": {"title": "Gym Membership", "amount": 1580.53, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got paid ₹220056.35 today from the bank.", "label": {"title": "Salary", "amount": 220056.35, "type": "income", "category": "Income"}}
+{"text": "Received ₹206312.92 as refund.", "label": {"title": "Refund", "amount": 206312.92, "type": "income", "category": "Income"}}
+{"text": "Deposited ₹11431.58 — gift money from grandma.", "label": {"title": "Gift Money", "amount": 11431.58, "type": "income", "category": "Income"}}
+{"text": "Got phone case from the mall, cost me Rs. 18663.86.", "label": {"title": "Phone Case", "amount": 18663.86, "type": "expense", "category": "Shopping"}}
+{"text": "Today I paid ₹7508.04 for my concert ticket.", "label": {"title": "Concert Ticket", "amount": 7508.04, "type": "expense", "category": "Entertainment"}}
+{"text": "Spent Rs. 27829.7 on water bill at the power company today.", "label": {"title": "Water Bill", "amount": 27829.7, "type": "expense", "category": "Bills"}}
+{"text": "Deposited ₹80034.65 — cashback reward from grandma.", "label": {"title": "Cashback Reward", "amount": 80034.65, "type": "income", "category": "Income"}}
+{"text": "Dropped ₹8758.34 on gym membership at CVS.", "label": {"title": "Gym Membership", "amount": 8758.34, "type": "expense", "category": "Health"}}
+{"text": "Got Netflix subscription from AMC, cost me ₹4887.44.", "label": {"title": "Subscription: Netflix", "amount": 4887.44, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid Rs. 2769.53 for Spotify subscription.", "label": {"title": "Subscription: Spotify", "amount": 2769.53, "type": "expense", "category": "Entertainment"}}
+{"text": "Dropped Rs. 7891.35 on new shoes at Best Buy.", "label": {"title": "New Shoes", "amount": 7891.35, "type": "expense", "category": "Shopping"}}
+{"text": "Grabbed groceries at Whole Foods — ₹874.72 gone.", "label": {"title": "Groceries", "amount": 874.72, "type": "expense", "category": "Food"}}
+{"text": "Received Rs. 230148.77 as refund.", "label": {"title": "Refund", "amount": 230148.77, "type": "income", "category": "Income"}}
+{"text": "₹18944.58 for dental checkup, ouch.", "label": {"title": "Dental Checkup", "amount": 18944.58, "type": "expense", "category": "Health"}}
+{"text": "Today I paid ₹1896.2 for my Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 1896.2, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got a book from Target, cost me Rs. 7272.67.", "label": {"title": "A Book", "amount": 7272.67, "type": "expense", "category": "Shopping"}}
+{"text": "Deposited Rs. 52087.11 — gift money from a client.", "label": {"title": "Gift Money", "amount": 52087.11, "type": "income", "category": "Income"}}
+{"text": "Dropped ₹3379.44 on dinner at Whole Foods.", "label": {"title": "Dinner", "amount": 3379.44, "type": "expense", "category": "Food"}}
+{"text": "Received ₹148858 as freelance payment.", "label": {"title": "Freelance Payment", "amount": 148858, "type": "income", "category": "Income"}}
+{"text": "Bought new shoes today, it was ₹9307.17.", "label": {"title": "New Shoes", "amount": 9307.17, "type": "expense", "category": "Shopping"}}
+{"text": "Today I paid Rs. 78460.34 for my water bill.", "label": {"title": "Water Bill", "amount": 78460.34, "type": "expense", "category": "Bills"}}
+{"text": "Spent Rs. 4574.23 on bus pass at Uber today.", "label": {"title": "Bus Pass", "amount": 4574.23, "type": "expense", "category": "Transport"}}
+{"text": "Bought pizza today, it was Rs. 622.33.", "label": {"title": "Pizza", "amount": 622.33, "type": "expense", "category": "Food"}}
+{"text": "Bought gym membership today, it was Rs. 12496.23.", "label": {"title": "Gym Membership", "amount": 12496.23, "type": "expense", "category": "Health"}}
+{"text": "Got gas from the parking garage, cost me ₹1665.35.", "label": {"title": "Gas", "amount": 1665.35, "type": "expense", "category": "Transport"}}
+{"text": "Got paid ₹232605.85 today from a client.", "label": {"title": "Salary", "amount": 232605.85, "type": "income", "category": "Income"}}
+{"text": "Dropped Rs. 3010.81 on train ticket at Lyft.", "label": {"title": "Train Ticket", "amount": 3010.81, "type": "expense", "category": "Transport"}}
+{"text": "Grabbed phone case at Amazon — Rs. 10021.99 gone.", "label": {"title": "Phone Case", "amount": 10021.99, "type": "expense", "category": "Shopping"}}
+{"text": "₹14141.45 for headphones, ouch.", "label": {"title": "Headphones", "amount": 14141.45, "type": "expense", "category": "Shopping"}}
+{"text": "Paid ₹2011.52 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 2011.52, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got paid ₹247966.94 today from grandma.", "label": {"title": "Refund", "amount": 247966.94, "type": "income", "category": "Income"}}
+{"text": "Received Rs. 25729.53 as cashback reward.", "label": {"title": "Cashback Reward", "amount": 25729.53, "type": "income", "category": "Income"}}
+{"text": "Received Rs. 166049.44 as freelance payment.", "label": {"title": "Freelance Payment", "amount": 166049.44, "type": "income", "category": "Income"}}
+{"text": "Got gym membership from Planet Fitness, cost me ₹13321.77.", "label": {"title": "Gym Membership", "amount": 13321.77, "type": "expense", "category": "Health"}}
+{"text": "the pharmacy charged me ₹6667.82 for dental checkup.", "label": {"title": "Dental Checkup", "amount": 6667.82, "type": "expense", "category": "Health"}}
+{"text": "Dropped ₹1842.36 on uber ride at Uber.", "label": {"title": "Uber Ride", "amount": 1842.36, "type": "expense", "category": "Transport"}}
+{"text": "Dropped Rs. 71024.67 on water bill at Verizon.", "label": {"title": "Water Bill", "amount": 71024.67, "type": "expense", "category": "Bills"}}
+{"text": "Spent ₹1097.89 on gym membership at iCloud today.", "label": {"title": "Gym Membership", "amount": 1097.89, "type": "expense", "category": "Subscriptions"}}
+{"text": "Today I paid ₹3120.54 for my lunch.", "label": {"title": "Lunch", "amount": 3120.54, "type": "expense", "category": "Food"}}
+{"text": "Grabbed coffee at Domino's — Rs. 523.91 gone.", "label": {"title": "Coffee", "amount": 523.91, "type": "expense", "category": "Food"}}
+{"text": "Received Rs. 136602.25 as refund.", "label": {"title": "Refund", "amount": 136602.25, "type": "income", "category": "Income"}}
+{"text": "Dropped Rs. 702.53 on cloud storage plan at Netflix.", "label": {"title": "Cloud Storage Plan", "amount": 702.53, "type": "expense", "category": "Subscriptions"}}
+{"text": "Got paid ₹227392.89 today from the store.", "label": {"title": "Freelance Payment", "amount": 227392.89, "type": "income", "category": "Income"}}
+{"text": "Renewed my medicine, ₹5421.78 charged by the clinic.", "label": {"title": "Medicine", "amount": 5421.78, "type": "expense", "category": "Health"}}
+{"text": "Got water bill from the power company, cost me ₹19155.29.", "label": {"title": "Water Bill", "amount": 19155.29, "type": "expense", "category": "Bills"}}
+{"text": "Got doctor visit from the pharmacy, cost me Rs. 19780.58.", "label": {"title": "Doctor Visit", "amount": 19780.58, "type": "expense", "category": "Health"}}
+{"text": "Received ₹84513.65 as freelance payment.", "label": {"title": "Freelance Payment", "amount": 84513.65, "type": "income", "category": "Income"}}
+{"text": "Grabbed Spotify subscription at Ticketmaster — ₹3576.7 gone.", "label": {"title": "Subscription: Spotify", "amount": 3576.7, "type": "expense", "category": "Entertainment"}}
+{"text": "Made ₹122650.94 from salary.", "label": {"title": "Salary", "amount": 122650.94, "type": "income", "category": "Income"}}
+{"text": "Grabbed Netflix subscription at iCloud — Rs. 1731.46 gone.", "label": {"title": "Subscription: Netflix", "amount": 1731.46, "type": "expense", "category": "Subscriptions"}}
+{"text": "Paid Rs. 4489.76 for doctor visit.", "label": {"title": "Doctor Visit", "amount": 4489.76, "type": "expense", "category": "Health"}}
+{"text": "my employer sent me ₹58586.32.", "label": {"title": "Freelance Payment", "amount": 58586.32, "type": "income", "category": "Income"}}
+{"text": "Grabbed gym membership at the clinic — Rs. 19580.4 gone.", "label": {"title": "Gym Membership", "amount": 19580.4, "type": "expense", "category": "Health"}}
+{"text": "Rs. 15783.35 for dental checkup, ouch.", "label": {"title": "Dental Checkup", "amount": 15783.35, "type": "expense", "category": "Health"}}
+{"text": "Dropped Rs. 35074.54 on rent at the power company.", "label": {"title": "Rent", "amount": 35074.54, "type": "expense", "category": "Bills"}}
+{"text": "Spent ₹1302.47 on breakfast at Domino's today.", "label": {"title": "Breakfast", "amount": 1302.47, "type": "expense", "category": "Food"}}
+{"text": "Dropped ₹1651.74 on breakfast at the cafe.", "label": {"title": "Breakfast", "amount": 1651.74, "type": "expense", "category": "Food"}}
+{"text": "Rs. 9511.84 for rent, ouch.", "label": {"title": "Rent", "amount": 9511.84, "type": "expense", "category": "Bills"}}
+{"text": "Grabbed a book at Best Buy — Rs. 12991.54 gone.", "label": {"title": "A Book", "amount": 12991.54, "type": "expense", "category": "Shopping"}}
+{"text": "Paid ₹579.44 for gym membership.", "label": {"title": "Gym Membership", "amount": 579.44, "type": "expense", "category": "Subscriptions"}}
+{"text": "Grabbed Netflix subscription at Ticketmaster — Rs. 6810.77 gone.", "label": {"title": "Subscription: Netflix", "amount": 6810.77, "type": "expense", "category": "Entertainment"}}
+{"text": "Today I paid Rs. 2128.52 for my parking.", "label": {"title": "Parking", "amount": 2128.52, "type": "expense", "category": "Transport"}}
+{"text": "Paid ₹5606.77 for Netflix subscription.", "label": {"title": "Subscription: Netflix", "amount": 5606.77, "type": "expense", "category": "Entertainment"}}
+{"text": "Paid ₹13593.3 for medicine.", "label": {"title": "Medicine", "amount": 13593.3, "type": "expense", "category": "Health"}}
+{"text": "a client sent me ₹216882.79.", "label": {"title": "Freelance Payment", "amount": 216882.79, "type": "income", "category": "Income"}}
+{"text": "Spent Rs. 18105.66 on dental checkup at Planet Fitness today.", "label": {"title": "Dental Checkup", "amount": 18105.66, "type": "expense", "category": "Health"}}
+{"text": "Spent Rs. 46171.71 on water bill at the power company today.", "label": {"title": "Water Bill", "amount": 46171.71, "type": "expense", "category": "Bills"}}
