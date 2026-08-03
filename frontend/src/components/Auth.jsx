@@ -19,7 +19,7 @@ const Auth = ({ onLogin }) => {
 
         const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
         const payload = isLogin ? { email, password } : { name, email, password };
-        const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://aura-backend-y5da.onrender.com';
 
         try {
             const response = await fetch(`${baseUrl}${endpoint}`, {

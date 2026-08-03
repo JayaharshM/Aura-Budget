@@ -80,12 +80,10 @@ import remarkGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import Auth from './components/Auth';
 
-const API_URL = import.meta.env.VITE_API_URL 
-  ? `${import.meta.env.VITE_API_URL}/api` 
-  : 'http://localhost:5001/api';
+const BACKEND_URL = import.meta.env.VITE_API_URL || 'https://aura-backend-y5da.onrender.com';
+const API_URL = `${BACKEND_URL}/api`;
 
-const SOCKET_URL = import.meta.env.VITE_API_URL 
-  || 'http://localhost:5001';
+const SOCKET_URL = BACKEND_URL;
 const socket = io(SOCKET_URL);
 
 function App() {

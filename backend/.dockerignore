@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────
+#  .dockerignore — keeps the build context lean & secrets safe
+# ─────────────────────────────────────────────────────────────
+
+# Node dependencies (rebuilt inside the image)
+node_modules/
+
+# Secrets & local environment files — NEVER bake into the image
+.env
+*.env
+atlas-credentials.env
+
+# Git internals
+.git
+.gitignore
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# macOS metadata
+.DS_Store
+
+# Runtime upload directory (mounted as a volume in production)
+uploads/
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# Test & CI artifacts
+*.log
+npm-debug.log*
