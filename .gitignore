@@ -1,2 +1,14 @@
 node_modules/
 backend/.env
+backend/atlas-credentials.env
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Frontend environment files (local overrides – never commit)
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# .env.example IS committed (it's the template)

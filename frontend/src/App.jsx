@@ -80,8 +80,12 @@ import remarkGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import Auth from './components/Auth';
 
-const API_URL = 'http://localhost:5001/api';
-const SOCKET_URL = 'http://localhost:5001';
+const API_URL = import.meta.env.VITE_API_URL 
+  ? `${import.meta.env.VITE_API_URL}/api` 
+  : 'http://localhost:5001/api';
+
+const SOCKET_URL = import.meta.env.VITE_API_URL 
+  || 'http://localhost:5001';
 const socket = io(SOCKET_URL);
 
 function App() {
